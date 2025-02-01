@@ -1,0 +1,58 @@
+/* Custom styles for membership page */
+body.dark-theme {
+    background-color:#121212; /* Dark background */
+    color: black; /* Light text */
+  }
+  
+  .card {
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    height: 100%; /* Ensure all cards have the same height */
+    background-color: #1e1e1e; /* Dark card background */
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .shadow {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  }
+  
+  .btn {
+    transition: opacity 0.3s ease;
+    background-color: #c0392b; /* Red button color */
+    border: none;
+  }
+  
+  .btn:hover {
+    opacity: 0.8;
+    background-color: #a5281b; /* Darker red on hover */
+  }
+  
+  .list-unstyled li {
+    margin-bottom: 10px;
+  }
+  
+  .text-muted {
+    color: #6c757d !important;
+  }
+  
+  /* Red accent for headings and highlights */
+  .card-title {
+    color: #c0392b; /* Red accent for headings */
+  }
+  
+  .card-text strong {
+    color: #c0392b; /* Red accent for prices */
+  }
+  
+  /* Footer styling */
+  footer {
+    background-color: #1e1e1e; /* Dark footer background */
+    color: #ffffff;
+  }
+  #head{
+    color: #1e1e1e;
+  }

@@ -1,0 +1,319 @@
+/* Dark Theme with Red Buttons */
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: #121212; /* Dark background */
+  color: #ffffff; /* White text */
+}
+
+/* Navbar */
+.navbar {
+  background-color: #1a1a1a; /* Darker navbar */
+  border-bottom: 1px solid #333;
+}
+
+.navbar-brand, .nav-link {
+  color: #ffffff !important; /* White text */
+}
+
+.nav-link.btn {
+  background-color: #ff4444; /* Red button */
+  color: white !important;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.nav-link.btn:hover {
+  background-color: #cc0000; /* Darker red on hover */
+}
+
+/* Today's Special Section */
+.today-special {
+  background-color: #1a1a1a; /* Dark background */
+  padding: 60px 0;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.section-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  color: #cccccc;
+}
+
+.dish-card {
+  background: #2c2c2c; /* Dark card background */
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+  margin: 0 15px;
+}
+
+.dish-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.dish-card img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+.dish-info {
+  padding: 20px;
+  text-align: left;
+  
+}
+
+.info{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.all_info{
+  display: flex;
+  justify-content: space-between;
+}
+
+#order_button{
+  margin: 20px;
+  height: 40px;
+}
+
+.orderbutton{
+  margin: 70px 30px;
+}
+button {
+  background-color: #ff4444;
+  color: white;
+  border-radius: 15px;
+  height: 40px;
+  width: 100px;
+}
+
+
+.dish-info h5 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.dish-info p {
+  font-size: 1rem;
+  color: #cccccc;
+  margin-bottom: 10px;
+}
+
+.dish-info .price {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #ff4444; /* Red price */
+  margin-bottom: 10px;
+}
+
+.badge {
+  font-size: 0.9rem;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+/* Membership Section */
+.membership {
+  background-color: #ff4444; /* Red background */
+  color: white;
+  padding: 60px 0;
+}
+
+.membership h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.membership p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+}
+
+.membership .btn-primary {
+  background-color: #1a1a1a; /* Dark button */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.membership .btn-primary:hover {
+  background-color: #333; /* Darker on hover */
+}
+
+/* Cuisines Section */
+.cuisines {
+  background-color: #1a1a1a; /* Dark background */
+  padding: 60px 0;
+}
+
+.cuisines h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #ffffff;
+}
+
+.cuisines .card {
+  background: #2c2c2c; /* Dark card background */
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.cuisines .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.cuisines .card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.cuisines .card-body {
+  padding: 20px;
+  text-align: left;
+}
+
+.cuisines .card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.cuisines .card-text {
+  font-size: 1rem;
+  color: #cccccc;
+}
+
+/* Reviews Section */
+.reviews {
+  background-color: #1a1a1a; /* Dark background */
+  padding: 60px 0;
+}
+
+.reviews h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #ffffff;
+}
+
+.reviews .card {
+  background: #2c2c2c; /* Dark card background */
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.reviews .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.reviews .card-body {
+  padding: 20px;
+  text-align: center;
+}
+
+.reviews .card-body img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.reviews .card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.reviews .card-text {
+  font-size: 1rem;
+  color: #cccccc;
+}
+
+/* Footer */
+.footer {
+  background-color: #1a1a1a; /* Dark background */
+  color: white;
+  padding: 20px 0;
+  border-top: 1px solid #333;
+}
+
+.footer a {
+  color: #ff4444; /* Red link */
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* Login Modal */
+.modal-content {
+  background-color: #2c2c2c; /* Dark modal background */
+  color: #ffffff;
+  border-radius: 15px;
+}
+
+.modal-header {
+  border-bottom: 1px solid #333;
+}
+
+.modal-title {
+  color: #ffffff;
+}
+
+.modal-body .form-label {
+  color: #ffffff;
+}
+
+.modal-body .form-control {
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+  color: #ffffff;
+}
+
+.modal-body .form-control:focus {
+  border-color: #ff4444;
+  box-shadow: 0 0 5px rgba(255, 68, 68, 0.5);
+}
+
+.modal-footer {
+  border-top: 1px solid #333;
+}
+
+.modal-footer a {
+  color: #ff4444; /* Red link */
+  text-decoration: none;
+}
+
+.modal-footer a:hover {
+  text-decoration: underline;
+}
