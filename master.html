@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sytax Snacks</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="canteen.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Sytax Snacks</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!--Today's Special -->
+<section class="today-special text-center">
+  <div class="container">
+    <h2 class="section-title">Today's Special</h2>
+    <p class="section-subtitle">Check out our delicious dishes of the day!</p>
+    <div id="todaySpecialCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <!-- Dish 1 -->
+        <div class="carousel-item active ">
+          <div class="dish-card">
+            <img src="istockphoto-966934632-612x612.jpg" alt="Paneer Tikka">
+            <div class="all_info">
+                <div class="dish-info">
+                  <h5>Paneer Tikka</h5>
+                  <p>Delicious grilled paneer with spices.</p>
+                  <p class="price">₹120</p>
+                  <span class="badge bg-warning">Popular</span>
+                </div>
+              <div class="orderbutton">
+                <button>Order Now</button>
+              </div>
+          </div>
+          </div>
+        </div>
+        <!-- Dish 2 -->
+        <div class="carousel-item">
+          <div class="dish-card">
+            <img src="ChickenBir.jpg" alt="Chicken Biryani">
+            <div class="all_info">
+              <div class="dish-info">
+                <h5>Chicken Biryani</h5>
+                <p>Flavorful rice with chicken.</p>
+                <p class="price">₹150</p>
+                <span class="badge bg-danger">Hot Deal</span>
+              </div>
+              <div class="orderbutton">
+                <button>Order Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Dish 3 -->
+        <div class="carousel-item">
+          <div class="dish-card">
+            <img src="shutterstock_2042520416-1.jpg" alt="Veg Pizza">
+            <div class="all_info">
+              <div class="dish-info">
+                <h5>Veg Pizza</h5>
+                <p>Cheesy veg pizza with toppings.</p>
+                <p class="price">₹200</p>
+                <span class="badge bg-success">New</span>
+              </div>
+              <div class="orderbutton">
+                <button>Order Now</button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <!-- Dish 4 -->
+        <div class="carousel-item">
+          <div class="dish-card">
+            <img src="cake.png" alt="Chocolate Cake">
+            <div class="all_info">
+              <div class="dish-info">
+                <h5>Chocolate Cake</h5>
+                <p>Rich and moist chocolate cake.</p>
+                <p class="price">₹80</p>
+                <span class="badge bg-info">Best Seller</span>
+              </div>
+              <div class="orderbutton">
+                <button>Order Now</button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Carousel Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#todaySpecialCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#todaySpecialCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+  <!-- Cuisines Available -->
+  <section class="cuisines text-center">
+    <div class="container">
+      <h2>Explore Our Cuisines</h2>
+      <div class="row mt-4">
+        <div class="col-md-3">
+          <div class="card">
+            <img src="indian.jpg" class="card-img-top" alt="Indian">
+            <div class="card-body">
+              <h5 class="card-title">Indian</h5>
+              <p class="card-text">Traditional Indian dishes.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <img src="chinese.jpg" class="card-img-top" alt="Chinese">
+            <div class="card-body">
+              <h5 class="card-title">Chinese</h5>
+              <p class="card-text">Authentic Chinese flavors.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <img src="italian.jpg" class="card-img-top" alt="Italian">
+            <div class="card-body">
+              <h5 class="card-title">Italian</h5>
+              <p class="card-text">Pasta, pizza, and more.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <img src="fastFood.jpg" class="card-img-top" alt="Fast Food">
+            <div class="card-body">
+              <h5 class="card-title">Fast Food</h5>
+              <p class="card-text">Burgers, fries, and snacks.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Membership Advertisement -->
+  <section class="membership text-center">
+    <div class="container">
+      <h2>Get Canteen Membership Now!</h2>
+      <p>Enjoy exclusive discounts, priority service, and free drinks.</p>
+      <a href="mem.html" class="btn btn-primary btn-lg">Apply Now</a>
+    </div>
+  </section>
+
+
+  <!-- Student Reviews -->
+  <section class="reviews text-center">
+    <div class="container">
+      <h2>What Our Students Say</h2>
+      <div class="row mt-4">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <img src="https://via.placeholder.com/100" class="rounded-circle mb-3" alt="Student 1">
+              <h5 class="card-title">Sameep Shinde</h5>
+              <p class="card-text">"The food is amazing and affordable!"</p>
+              <p class="card-text">⭐⭐⭐⭐⭐</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <img src="https://via.placeholder.com/100" class="rounded-circle mb-3" alt="Student 2">
+              <h5 class="card-title">Shiwansh Singh</h5>
+              <p class="card-text">"Great variety and friendly staff."</p>
+              <p class="card-text">⭐⭐⭐⭐⭐</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <img src="https://via.placeholder.com/100" class="rounded-circle mb-3" alt="Student 3">
+              <h5 class="card-title">Rohan kulkarni</h5>
+              <p class="card-text">"Love the daily specials!"</p>
+              <p class="card-text">⭐⭐⭐⭐⭐</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer text-center">
+    <div class="container">
+      <p>&copy; 2023 College Canteen. All rights reserved.</p>
+      <p>Contact: canteen@college.edu | Follow us on <a href="#" class="text-white">Social Media</a></p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Login Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="loginModalLabel">Login</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Login Form -->
+        <form>
+          <!-- Dropdown for User Type -->
+          <div class="mb-3">
+            <label for="userType" class="form-label">Login As</label>
+            <select class="form-select" id="userType" required>
+              <option value="" disabled selected>Select User Type</option>
+              <option value="student">Student</option>
+              <option value="staff">Staff</option>
+            </select>
+          </div>
+          <!-- Email Input -->
+          <div class="mb-3">
+            <label for="email" class="form-label">Email Address</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+          </div>
+          <!-- Password Input -->
+          <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" placeholder="Enter your password" required>
+          </div>
+          <!-- Submit Button -->
+          <button type="submit" class="btn btn-primary w-100">Login</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <p class="text-center w-100">Don't have an account? <a href="#">Sign Up</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
